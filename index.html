@@ -4,12 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
+
+        <div class="header">
+            <h1>Expenses</h1>
+            <!--<h3>The lifelong game that will always have you asking, "Can I buy that?"</h3>-->
+        </div>
+
+        <form id='table'>
+            <fieldset>
+                <legend>Expense log</legend>
+                <label for="purchase">Purchase:</label><br><br>
+                <input type="text" id="purchase-title" name="purchase" placeholder="What did you buy?" /><br><br>
+                <label for="location">Location:</label><br><br>
+                <input type="text" id="purchase-location" name="location"
+                    placeholder="Where did you buy item?" /><br><br>
+                <label for="payment">Payment type:</label>
+                <select name="paymentType">
+                    <option value="blank"></option>
+                    <option value='cash'>Cash</option>
+                    <option value='debit'>Debit</option>
+                    <option value='credit'>Credit</option>
+                </select><br><br>
+                <label for="date">Purchase Date:</label>
+                <input type="date" id="purchase-date" name="date" /><br><br>
+                <label for="amount">Amount:</label>
+                <input type="number" id="expense-amt" name="amount" /><br><br>
+                <button type="submit" value="submit" id='submitButton'>Submit</button>
+            </fieldset>
+
+        </form>
+
+        <table id="expense_list">
+            <tr>
+                <th scope="col:1">Purchased Item</th>
+                <th scope="col:2">Purchase location</th>
+                <th scope="col:3">Payment type</th>
+                <th scope="col:4">Date</th>
+                <th scope="col:5">Final Price</th>
+            </tr>
+            <tr>
+                <td id="item"></td>
+                <td id="destination"></td>
+                <td id="funds"></td>
+                <td id="dates"></td>
+                <td id="expenseAmt"></td>
+            </tr>
+
+        </table>
+
+    </div>
+    </div>
 
 
     <script src="script.js"></script>

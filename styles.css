@@ -1,0 +1,83 @@
+body {
+    background-color:#e7eaf6
+}
+
+.container {
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+#table { 
+    width: 40%; 
+    float: left;   
+}
+
+#table legend {
+    font-size: 40px;
+}
+
+#table label {
+    font-size: 30px;
+}
+
+#table input {
+    font-size: 25px;
+}
+
+#table select {
+    font-size: 25px;
+}
+
+#expense-amt {
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    font-size: 25px;
+}
+
+#expense_list {
+    float:right;
+    border: 5px solid #113f67; 
+    font-size:20px;
+    padding: 8px;
+    width: 55%;
+}
+
+
+
+
+
+/*.purchase_table  {
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%
+}*/
+
+
+
