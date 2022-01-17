@@ -1,4 +1,5 @@
 const expenseTable = document.getElementById('table');
+const list = document.getElementById('expense_list')
 
 table.addEventListener('submit', addItems);
 
@@ -12,8 +13,8 @@ function addItems(e) {
     var date = elements.date.value;
     var amount = elements.amount.value;
 
-    var td = document.createElement('td');
-    td.appendChild(document.createTextNode(elements));
+    var tr = document.createElement('tr');
+    tr.appendChild(document.createTextNode(purchase, location, paymentType, date, amount));
 
     document.getElementById('item').textContent = `${purchase}`;
     document.getElementById('destination').textContent = `${location}`;
@@ -21,5 +22,5 @@ function addItems(e) {
     document.getElementById('dates').textContent = `${date}`;
     document.getElementById('expenseAmt').textContent = `${amount}`;
 
-    expenseTable.appendChild(td)
+    expenseTable.appendChild(tr)
 }
