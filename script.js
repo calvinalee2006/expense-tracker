@@ -1,7 +1,9 @@
 const expenseTable = document.getElementById('table');
 const list = document.getElementById('expense_list')
+const removeBtn = document.getElementById('btn-remove')
 
 table.addEventListener('submit', addItems);
+removeBtn.addEventListener('click', removeItem)
 
 function addItems(e) {
     e.preventDefault();
@@ -12,6 +14,7 @@ function addItems(e) {
     var paymentType = elements.paymentType.value;
     var date = elements.date.value;
     var amount = elements.amount.value;
+
     var tr = document.createElement('tr')
 
     const purchaseTd = document.createElement('td');
@@ -34,5 +37,16 @@ function addItems(e) {
     amountTd.textContent = amount;
     tr.appendChild(amountTd);
 
+    var removeTd = document.createElement('button');
+    removeTd.className = 'btn-remove';
+    removeTd.appendChild(document.createTextNode('X'));
+    tr.appendChild(removeTd)
+
+
     list.appendChild(tr);
+}
+
+function removeItem(e) {
+    var removeData = document.getElementsByClassName('btn-remove');
+    removeData.remove()
 }
