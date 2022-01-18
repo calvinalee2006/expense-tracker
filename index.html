@@ -31,9 +31,9 @@
                 <label for="payment">Payment type:</label>
                 <select name="paymentType">
                     <option value="blank"></option>
-                    <option value='cash'>Cash</option>
-                    <option value='debit'>Debit</option>
-                    <option value='credit'>Credit</option>
+                    <option value='Cash'>Cash</option>
+                    <option value='Debit'>Debit</option>
+                    <option value='Credit'>Credit</option>
                 </select><br><br>
                 <label for="date">Purchase Date:</label>
                 <input type="date" id="purchase-date" name="date" /><br><br>
@@ -45,22 +45,18 @@
         </form>
 
         <table id="expense_list">
-            <tr>
-                <th scope="col:1">Purchased Item</th>
-                <th scope="col:2">Purchase location</th>
-                <th scope="col:3">Payment type</th>
-                <th scope="col:4">Date</th>
-                <th scope="col:5">Final Price</th>
-            </tr>
-            <tr>
-                <td id="item"></td>
-                <td id="destination"></td>
-                <td id="funds"></td>
-                <td id="dates"></td>
-                <td id="expenseAmt"></td>
-            </tr>
-            <tr></tr>
+            <thead>
+                <tr>
+                    <th scope="col:1">Purchased Item</th>
+                    <th scope="col:2">Purchase location</th>
+                    <th scope="col:3">Payment type</th>
+                    <th scope="col:4">Date</th>
+                    <th scope="col:5">Final Price</th>
+                </tr>
+            </thead>
+            <tbody>
 
+            </tbody>
         </table>
 
     </div>

@@ -12,15 +12,27 @@ function addItems(e) {
     var paymentType = elements.paymentType.value;
     var date = elements.date.value;
     var amount = elements.amount.value;
+    var tr = document.createElement('tr')
 
-    var tr = document.createElement('tr');
-    tr.appendChild(document.createTextNode(purchase, location, paymentType, date, amount));
+    const purchaseTd = document.createElement('td');
+    purchaseTd.textContent = purchase;
+    tr.appendChild(purchaseTd);
 
-    document.getElementById('item').textContent = `${purchase}`;
-    document.getElementById('destination').textContent = `${location}`;
-    document.getElementById('funds').textContent = `${paymentType}`;
-    document.getElementById('dates').textContent = `${date}`;
-    document.getElementById('expenseAmt').textContent = `${amount}`;
+    const locationTd = document.createElement('td');
+    locationTd.textContent = location;
+    tr.appendChild(locationTd);
 
-    expenseTable.appendChild(tr)
+    const paymentTd = document.createElement('td');
+    paymentTd.textContent = paymentType;
+    tr.appendChild(paymentTd);
+
+    const dateTd = document.createElement('td');
+    dateTd.textContent = date;
+    tr.appendChild(dateTd);
+
+    const amountTd = document.createElement('td');
+    amountTd.textContent = amount;
+    tr.appendChild(amountTd);
+
+    list.appendChild(tr);
 }
