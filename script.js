@@ -1,9 +1,9 @@
 const expenseTable = document.getElementById('table');
-const list = document.getElementById('expense_list')
-const removeBtn = document.getElementById('btn-remove')
+const list = document.getElementById('expense_list');
+const remove = document.getElementById('btnRemove');
 
 table.addEventListener('submit', addItems);
-removeBtn.addEventListener('click', removeItem)
+expense_list.addEventListener('click', removeItems)
 
 function addItems(e) {
     e.preventDefault();
@@ -38,15 +38,17 @@ function addItems(e) {
     tr.appendChild(amountTd);
 
     var removeTd = document.createElement('button');
-    removeTd.className = 'btn-remove';
+    removeTd.className = 'btnRemove';
     removeTd.appendChild(document.createTextNode('X'));
     tr.appendChild(removeTd)
 
-
     list.appendChild(tr);
+
 }
 
-function removeItem(e) {
-    var removeData = document.getElementsByClassName('btn-remove');
-    removeData.remove()
+function removeItems(e) {
+    var tr = e.target.parentElement;
+    expense_list.removeChild(tr);
+
 }
+
