@@ -17,7 +17,9 @@ body {
 
 #table { 
     width: 40%; 
-    float: left;   
+    float: left;  
+    background-color:#a2a8d3;
+     
 }
 
 #table legend {
@@ -38,6 +40,11 @@ body {
 
 #expense-amt {
     width: 40%;
+}
+
+#expense_list {
+    background-color: #ffff;
+    text-align: center;
 }
 
 
