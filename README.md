@@ -4,7 +4,7 @@
 
 click [here](https://calvinalee2006.github.io/expense-tracker/) to checkout the site!
 
-![Portfolio project]("images/Screenshot (28).png")
+![Portfolio project]("/../images/Screenshot%20(28).pngimages/Screenshot (28).png")
 ### Summary
 This was a project from the mastermind course, that gave me a little more confidence in my understanding of javascript! I mostly had one hiccup, but deciding between styles and how 
 to asses the situation was a bit easier for me. Enjoy!:smiley:
