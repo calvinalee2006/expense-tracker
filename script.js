@@ -43,6 +43,7 @@ function addItems(e) {
     tr.appendChild(removeTd)
 
     list.appendChild(tr);
+    document.getElementById('table').reset();
 
 }
 
