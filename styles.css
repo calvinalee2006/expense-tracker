@@ -15,26 +15,26 @@ body {
     
 }
 
-#table { 
+#inputForm { 
     width: 40%; 
     float: left;  
     background-color:#a2a8d3;
      
 }
 
-#table legend {
+#inputForm legend {
     font-size: 40px;
 }
 
-#table label {
+#inputForm label {
     font-size: 30px;
 }
 
-#table input {
+#inputForm input {
     font-size: 25px;
 }
 
-#table select {
+#inputForm select {
     font-size: 25px;
 }
 
