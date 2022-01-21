@@ -1,90 +1,58 @@
 body {
-    background-color:#e7eaf6
+  background-color: #e7eaf6;
 }
 
 .container {
-    width: 98%;
-    margin: auto;
-    overflow: hidden;
+  width: 98%;
+  margin: auto;
+  overflow: hidden;
 }
 
 .header {
-    font-family: 'Manrope', sans-serif;
-    text-align: center;
-    font-size: 40px;
-    
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  font-size: 40px;
 }
 
-#inputForm { 
-    width: 40%; 
-    float: left;  
-    background-color:#a2a8d3;
-     
+#inputForm {
+  width: 40%;
+  float: left;
+  background-color: #a2a8d3;
 }
 
 #inputForm legend {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 #inputForm label {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 #inputForm input {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 #inputForm select {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 #expense-amt {
-    width: 40%;
+  width: 40%;
 }
 
 #expense_list {
-    background-color: #ffff;
-    text-align: center;
+  background-color: #ffff;
+  text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 button {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 #expense_list {
-    float:right;
-    border: 5px solid #113f67; 
-    font-size:20px;
-    padding: 8px;
-    width: 55%;
+  float: right;
+  border: 5px solid #113f67;
+  font-size: 20px;
+  padding: 8px;
+  width: 55%;
 }
-
-
-
-
-
-/*.purchase_table  {
-    margin-left: auto;
-    margin-right:auto;
-    width: 100%
-}*/
-
-
-
